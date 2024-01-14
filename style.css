@@ -2,3 +2,25 @@
 
 /*font-family: 'Passion One', sans-serif;
 font-family: 'Sriracha', cursive;*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
+
+:root{
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: 'Passion One', cursive;
+  --fonte3: 'Sriracha', cursive;
+}
+
+header{
+  background-color: black;
+  color: white;
+}
+
+section > p{
+  padding-bottom: 2em;
+  font-family: 'Sriracha', cursive;
+  font-size: 3.5vw;
+}
