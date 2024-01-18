@@ -1,11 +1,17 @@
+/*core config.*/
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
 
-/*font-family: 'Passion One', sans-serif;
-font-family: 'Sriracha', cursive;*/
 *{
   margin: 0px;
   padding: 0px;
   font-size: 1em;
+}
+
+html,body{
+  min-height: 100vh;
+  font-family: var(--fonte1);
+  background-color: darkgray;
 }
 
 :root{
@@ -13,6 +19,10 @@ font-family: 'Sriracha', cursive;*/
   --fonte2: 'Passion One', cursive;
   --fonte3: 'Sriracha', cursive;
 }
+
+/*core config.*/
+
+/*header config.*/
 
 header{
   background-color: black;
@@ -24,29 +34,30 @@ header{
 }
 
 header h1{
+  padding-top: 50px;
   font-size: 10em;
   font-family: var(--fonte2);
   font-variant: small-caps;
 }
 
-header h2{
+header p{
   font-family: var(--fonte1);
-  
+  padding-bottom: 50px;
 }
 
 header a{
   text-decoration: none;
   color: white;
+  font-weight: bolder;
 }
 
 header a:hover{
   text-decoration: underline;
 }
 
-body{
-  min-height: 100vh;
-  font-family: var(--fonte1);
-}
+/*header config.*/
+
+/*body config.*/
 
 section{
   padding-top: 10vh;
@@ -57,7 +68,7 @@ section{
   font-size: 3.5vw;
 }
 
-section > p{
+section > pre{
   padding-bottom: 2em;}
 
 section.default{
@@ -71,11 +82,16 @@ section.parallax{
   background-size: cover;
 }
 
-section.parallax > p{
+section.parallax > pre{
   display: inline-block;
   padding: 6px;
   background-color: rgba(0, 0, 0, 0.514);
   text-shadow: 1px 1px 0px black;
+}
+
+section > pre{
+  white-space: pre-line;
+  font-family: var(--fonte3);
 }
 
 #img01{
@@ -85,6 +101,10 @@ section.parallax > p{
 #img02{
   background-image: url(imagens/background002.jpg);
 }
+
+/*body config.*/
+
+/*footer config.*/
 
 footer{
   background-color: black;
@@ -107,3 +127,5 @@ footer .site{
 footer a:hover{
   text-decoration: underline;
 }
+
+/*footer config.*/
