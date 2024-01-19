@@ -69,7 +69,8 @@ section{
 }
 
 section > pre{
-  padding-bottom: 2em;}
+  padding-bottom: 2em;
+}
 
 section.default{
   color: black;
@@ -94,11 +95,12 @@ section > pre{
   font-family: var(--fonte3);
 }
 
-#img01{
+section#img01{
   background-image: url(imagens/background001.jpg);
   background-position: right center;
+
 }
-#img02{
+section#img02{
   background-image: url(imagens/background002.jpg);
 }
 
